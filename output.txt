@@ -1,88 +1,29 @@
-OpsCore-py36-gmc-compat/core/auth_service.py
+clustername = tou_s
+ID = 51
 
-import ssl
-from ldap3 import Server, Connection, ALL, Tls
+select * from tLSF.hosts where ID = 14767
+ID	hostname	active	cluster_ID	host_role	ext_role	dnssuffix	ipaddress	hostarchitecture_ID	hostmodel_ID	hosttype_ID	AspireCode	server	MXJ	DISP_WINDOW
+14,767	fr0-1v77-012	1	51	n	 	eu.airbus.corp	
 
-def authenticate_user(username, password):
-    """
-    Validates credentials against Airbus LDAP proxy.
-    Verified format: Just the username (e.g., stiwxamh).
-    """
-    LDAP_SERVER = 'ldapproxy-vip.eu.airbus.corp' [cite: 1]
-    LDAP_PORT = 636 [cite: 1]
-    
-    try:
-        # Secure TLS configuration is mandatory for port 636 [cite: 2]
-        tls_config = Tls(validate=ssl.CERT_NONE, version=ssl.PROTOCOL_TLSv1_2)
-        server = Server(LDAP_SERVER, port=LDAP_PORT, use_ssl=True, tls=tls_config, get_info=ALL)
-        
-        # Connection attempt using the SIMPLE bind method [cite: 3]
-        conn = Connection(server, user=username, password=password, authentication='SIMPLE')
-        
-        if conn.bind():
-            conn.unbind()
-            return True
-        return False
-    except Exception as e:
-        print("LDAP Auth Error: {}".format(e))
-        return False
+so original is tou_s 
 
+i want to move it tou_u = 151
 
-OpsCore-py36-gmc-compat/app.py
-# ... existing imports [cite: 5]
-from flask import Flask, flash, redirect, render_template, request, session, url_for
-from core.auth_service import authenticate_user 
+I get this error 
 
-app = Flask(__name__)
-# Uses environment variable or a default dev key for sessions 
-app.secret_key = os.environ.get("FLASK_SECRET_KEY", "opscore-dev-insecure-change-for-production")
+Validate hosts against original cluster
+These hosts were validated when you left the previous step (they must exist and match the original cluster). If anything is wrong, go back twice to edit hostnames or cluster selection.
 
-@app.before_request
-def require_login():
-    """Protect all routes except 'login' and 'static' files."""
-    allowed_routes = ['login', 'static']
-    if request.endpoint not in allowed_routes and 'user' not in session:
-        return redirect(url_for('login'))
+Input: fr0-1v77-012
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
-        
-        if authenticate_user(username, password):
-            session['user'] = username
-            flash("Logged in as {}".format(username), "ok")
-            return redirect(url_for('index'))
-        else:
-            flash("Invalid Airbus ID or Password", "error")
-            
-    return render_template('login.html')
+No validated hosts in context. Go back one step.
 
-@app.route('/logout')
-def logout():
-    session.pop('user', None)
-    return redirect(url_for('login'))
+But this node is with tou_s -- 51 
 
-# ... rest of the existing routes (scan, compare, etc.) [cite: 19, 20]
+cat opscore_audit.log
+[2026-04-20 00:51:05] user=stiwxamh action=wizard_start status=success role=admin run_id=079b173b-fadd-4623-9049-bf1cf7f30d9f service_id=move_hosts_between_clusters wizard_id=move_hosts_between_clusters
+[2026-04-20 00:51:26] user=stiwxamh action=host_move status=success orig_cluster=tou_s phase=cluster_pick request=4447 role=admin target_cluster=tou_u
+[2026-04-20 00:52:00] user=stiwxamh action=host_move status=success orig_cluster=tou_s phase=cluster_pick request=4447 role=admin target_cluster=tou_u
+[2026-04-20 00:54:14] user=stiwxamh action=host_move status=success orig_cluster=tou_s phase=cluster_pick request=4447 role=admin target_cluster=tou_u
 
-
-OpsCore-py36-gmc-compat/templates/login.html
-{% extends "base.html" %}
-{% block content %}
-<div class="card" style="max-width: 400px; margin: 2rem auto;">
-    <header class="page-header-block">
-        <h1 class="page-title">OpsCore Login</h1>
-        <p class="page-description">Sign in with your Airbus credentials.</p>
-    </header>
-    <form method="POST">
-        <label for="username">Airbus ID</label>
-        <input type="text" name="username" id="username" required autofocus>
-        
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
-        
-        <button type="submit" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Sign In</button>
-    </form>
-</div>
-{% endblock %}
+what is wrong here , Can you correct it
