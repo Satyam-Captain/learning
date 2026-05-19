@@ -1,0 +1,193 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="openstack-ood-gof-target" name="OpenStack + OOD + GoF Target">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1280" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;GISEH of Future — Target Architecture (OpenStack + Open OnDemand)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=17;fontStyle=1">
+          <mxGeometry x="40" y="12" width="1820" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="sub" parent="1" vertex="1" value="Realistic placement: green = OOD | purple = OpenStack | blue = GoF build | grey = enterprise integrate | orange = gap/custom | dashed = out of scope" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontColor=#666666">
+          <mxGeometry x="40" y="54" width="1820" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg" parent="1" vertex="1" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;&lt;font color=#2E7D32&gt;■&lt;/font&gt; Open OnDemand &amp;nbsp; &lt;font color=#7B1FA2&gt;■&lt;/font&gt; OpenStack &amp;nbsp; &lt;font color=#005AAB&gt;■&lt;/font&gt; GoF control plane &amp;nbsp; &lt;font color=#3949AB&gt;■&lt;/font&gt; LSF/HPC/GISEH &amp;nbsp; &lt;font color=#666666&gt;■&lt;/font&gt; Enterprise &amp;nbsp; &lt;font color=#E65100&gt;▢&lt;/font&gt; Custom gap &amp;nbsp; &lt;font color=#999999&gt;▢&lt;/font&gt; Out of scope" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;align=left;spacingLeft=8;fontSize=9;">
+          <mxGeometry x="40" y="82" width="560" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="z_users" parent="1" vertex="1" value="Users" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fillColor=#F5F5F5;strokeColor=#333;fontStyle=1">
+          <mxGeometry x="40" y="150" width="170" height="680" as="geometry"/>
+        </mxCell>
+        <mxCell id="u1" parent="z_users" vertex="1" value="Simulation engineers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;">
+          <mxGeometry x="15" y="42" width="140" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="u2" parent="z_users" vertex="1" value="Software developers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;">
+          <mxGeometry x="15" y="98" width="140" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="u3" parent="z_users" vertex="1" value="Workflow owners" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;">
+          <mxGeometry x="15" y="154" width="140" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="u4" parent="z_users" vertex="1" value="EE partners" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;">
+          <mxGeometry x="15" y="210" width="140" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="u5" parent="z_users" vertex="1" value="CI / automation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;">
+          <mxGeometry x="15" y="266" width="140" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="z_ood" parent="1" vertex="1" value="Open OnDemand Portal" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fillColor=#E8F5E9;strokeColor=#333;fontStyle=1">
+          <mxGeometry x="230" y="150" width="720" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="ood_jobs" parent="z_ood" vertex="1" value="&lt;b&gt;Job submission UI&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Adapter to LSF | queues, scripts, array jobs&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontStyle=1">
+          <mxGeometry x="15" y="42" width="160" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="ood_apps" parent="z_ood" vertex="1" value="&lt;b&gt;Interactive apps&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Jupyter, VS Code, VNC, desktops&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontStyle=1">
+          <mxGeometry x="185" y="42" width="160" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="ood_files" parent="z_ood" vertex="1" value="&lt;b&gt;Terminal &amp;amp; files&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Home/project browser on shared storage&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontStyle=1">
+          <mxGeometry x="355" y="42" width="160" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="ood_viz" parent="z_ood" vertex="1" value="&lt;b&gt;Visualization launch&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Post-processing app hooks&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontStyle=1">
+          <mxGeometry x="525" y="42" width="175" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="z_gof" parent="1" vertex="1" value="GoF Control Plane (custom build)" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fillColor=#E8F4FC;strokeColor=#333;fontStyle=1">
+          <mxGeometry x="230" y="320" width="720" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_mdac" parent="z_gof" vertex="1" value="Policy / MDAC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="15" y="42" width="130" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_ref" parent="z_gof" vertex="1" value="Reference resolution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="155" y="42" width="130" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_run" parent="z_gof" vertex="1" value="Run identity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="295" y="42" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_lin" parent="z_gof" vertex="1" value="Lineage &amp;amp; audit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="425" y="42" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_wf" parent="z_gof" vertex="1" value="Workflow state" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="555" y="42" width="145" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_spdm" parent="z_gof" vertex="1" value="SPDM stage/publish" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8E8E8;strokeColor=#2E8B8B;">
+          <mxGeometry x="15" y="105" width="165" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_place" parent="z_gof" vertex="1" value="Placement &amp;amp; routing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="190" y="105" width="145" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_obs" parent="z_gof" vertex="1" value="Notify / observe" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="345" y="105" width="130" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_api" parent="z_gof" vertex="1" value="Session broker APIs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="485" y="105" width="215" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_note" parent="z_gof" vertex="1" value="&lt;font style='font-size:9px'&gt;OOD is UX only — GoF owns policy, refs, run IDs, digital thread&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#003366;">
+          <mxGeometry x="15" y="165" width="680" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="z_exec" parent="1" vertex="1" value="Execution &amp;amp; Runtime" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fillColor=#F3E5F5;strokeColor=#333;fontStyle=1">
+          <mxGeometry x="230" y="540" width="720" height="290" as="geometry"/>
+        </mxCell>
+        <mxCell id="lsf" parent="z_exec" vertex="1" value="&lt;b&gt;LSF / HPC production batch&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Queues, fairshare, license integration, large CAE&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#3949AB;fontStyle=1">
+          <mxGeometry x="15" y="42" width="220" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="oss" parent="z_exec" vertex="1" value="&lt;b&gt;OpenStack private cloud&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Nova, Neutron, Cinder, Manila, Glance, Heat&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;">
+          <mxGeometry x="250" y="42" width="200" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="oss_dev" parent="z_exec" vertex="1" value="&lt;b&gt;Dev / sandbox VMs&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Tenant-isolated engineering sandboxes&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;">
+          <mxGeometry x="465" y="42" width="120" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof_env" parent="z_exec" vertex="1" value="&lt;b&gt;Runtime catalog&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Guix, Spack, modules, SIF refs&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="15" y="130" width="155" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="rt_cont" parent="z_exec" vertex="1" value="&lt;b&gt;Containers / Apptainer&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Executed on LSF or K8s workers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;dashed=1;">
+          <mxGeometry x="180" y="130" width="155" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="gpu_cls" parent="z_exec" vertex="1" value="&lt;b&gt;GPU execution classes&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Policy route: LSF GPU or Magnum/K8s&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;dashed=1;">
+          <mxGeometry x="345" y="130" width="155" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="oss_elastic" parent="z_exec" vertex="1" value="&lt;b&gt;Elastic service hosting&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Heat/Magnum for burst pools&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;">
+          <mxGeometry x="510" y="130" width="185" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="exec_note" parent="z_exec" vertex="1" value="&lt;font style='font-size:9px'&gt;&lt;b&gt;Rule:&lt;/b&gt; Production CAE at scale stays on LSF/HPC — OpenStack hosts sandboxes, gateways, and elastic pools, not solver logic&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;">
+          <mxGeometry x="15" y="205" width="680" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="z_ent" parent="1" vertex="1" value="Integrated Enterprise Systems" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fillColor=#EEEEEE;strokeColor=#333;fontStyle=1">
+          <mxGeometry x="970" y="150" width="380" height="680" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_spdm" parent="z_ent" vertex="1" value="&lt;b&gt;SPDM / PLM&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Lifecycle authority&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="42" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_iam" parent="z_ent" vertex="1" value="&lt;b&gt;IAM / SSO&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Corp IdP, claims&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="100" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_stor" parent="z_ent" vertex="1" value="&lt;b&gt;Storage tiers&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;NAS, object, archive&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="158" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_lic" parent="z_ent" vertex="1" value="&lt;b&gt;License servers&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;FlexLM, vendor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="216" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_ci" parent="z_ent" vertex="1" value="&lt;b&gt;CI / CD&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Jenkins, GitLab&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="274" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_art" parent="z_ent" vertex="1" value="&lt;b&gt;Artifactory / Harbor&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Packages, images&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="332" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_mo" parent="z_ent" vertex="1" value="&lt;b&gt;ModelOps / ML&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Enterprise registry&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="390" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_obs" parent="z_ent" vertex="1" value="&lt;b&gt;Observability&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Splunk, Datadog-class&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="448" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_cae" parent="z_ent" vertex="1" value="&lt;b&gt;Domain CAE apps&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Abaqus, Nastran, Star-CCM+&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="506" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_sky" parent="z_ent" vertex="1" value="&lt;b&gt;Skywise / data platforms&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;In-service data&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;">
+          <mxGeometry x="15" y="564" width="345" height="52" as="geometry"/>
+        </mxCell>
+        <mxCell id="z_out" parent="1" vertex="1" value="Explicitly out of scope (not GoF, not OpenStack, not OOD)" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fillColor=#FAFAFA;strokeColor=#333;fontStyle=1">
+          <mxGeometry x="40" y="860" width="1310" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="out1" parent="z_out" vertex="1" value="SPDM/PLM product ownership" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999999;dashed=1;fontColor=#666666;">
+          <mxGeometry x="15" y="38" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="out2" parent="z_out" vertex="1" value="CAD authoring &amp;amp; solver methodology" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999999;dashed=1;fontColor=#666666;">
+          <mxGeometry x="225" y="38" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="out3" parent="z_out" vertex="1" value="Legal / export classification ownership" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999999;dashed=1;fontColor=#666666;">
+          <mxGeometry x="435" y="38" width="220" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="out4" parent="z_out" vertex="1" value="Procurement &amp;amp; license contracts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999999;dashed=1;fontColor=#666666;">
+          <mxGeometry x="665" y="38" width="200" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="out5" parent="z_out" vertex="1" value="Partner internal IT" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999999;dashed=1;fontColor=#666666;">
+          <mxGeometry x="875" y="38" width="180" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="out6" parent="z_out" vertex="1" value="Datacenter / bare-metal lifecycle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999999;dashed=1;fontColor=#666666;">
+          <mxGeometry x="1065" y="38" width="220" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="2" parent="1" edge="1" source="u1" target="ood_jobs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="3" parent="1" edge="1" source="u2" target="ood_apps" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="4" parent="1" edge="1" source="u3" target="gof_api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="5" parent="1" edge="1" source="u4" target="gof_mdac" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="6" parent="1" edge="1" source="u5" target="gof_wf" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="7" parent="1" edge="1" source="ood_jobs" target="gof_run" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="8" parent="1" edge="1" source="ood_apps" target="gof_api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="9" parent="1" edge="1" source="ood_files" target="gof_ref" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="10" parent="1" edge="1" source="ood_viz" target="gof_place" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="11" parent="1" edge="1" source="gof_run" target="lsf" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="12" parent="1" edge="1" source="gof_place" target="lsf" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="13" parent="1" edge="1" source="gof_place" target="oss" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="14" parent="1" edge="1" source="gof_env" target="gof_run" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="15" parent="1" edge="1" source="gof_spdm" target="ent_spdm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="16" parent="1" edge="1" source="gof_mdac" target="ent_iam" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="17" parent="1" edge="1" source="gof_ref" target="ent_stor" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="18" parent="1" edge="1" source="gof_lin" target="ent_obs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="19" parent="1" edge="1" source="gof_wf" target="ent_ci" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="20" parent="1" edge="1" source="gof_run" target="ent_lic" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="21" parent="1" edge="1" source="lsf" target="ent_cae" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="22" parent="1" edge="1" source="oss_dev" target="oss" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="23" parent="1" edge="1" source="gpu_cls" target="lsf" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="24" parent="1" edge="1" source="gpu_cls" target="oss_elastic" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="25" parent="1" edge="1" source="ent_spdm" target="ent_stor" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="footer" parent="1" vertex="1" value="&lt;b&gt;SPDM remains lifecycle authority&lt;/b&gt; — GoF stages governed copies; LSF executes; OOD is the engineer front door" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#CC9900;fontSize=10;align=center;">
+          <mxGeometry x="40" y="990" width="1310" height="36" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

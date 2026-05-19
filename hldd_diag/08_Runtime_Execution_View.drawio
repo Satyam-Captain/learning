@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="hldd-08-runtime" name="08 Runtime Execution">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="420" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;HLDD 4.5 — Runtime / Execution Path&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;">
+          <mxGeometry x="40" y="12" width="1220" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg" parent="1" vertex="1" value="Solid = platform path &amp;nbsp;|&amp;nbsp; Last box = integrated scheduler (not owned)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;align=left;spacingLeft=6;fontSize=9;">
+          <mxGeometry x="40" y="50" width="480" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" parent="1" vertex="1" value="Session / API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="40" y="120" width="170" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" parent="1" vertex="1" value="Workflow (opt.)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="40" y="120" width="170" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="2" parent="1" edge="1" source="e1" target="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="e3" parent="1" vertex="1" value="Execution fabric" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="40" y="120" width="170" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" parent="1" edge="1" source="e2" target="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="e4" parent="1" vertex="1" value="Env bind" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="40" y="120" width="170" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" parent="1" edge="1" source="e3" target="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="e5" parent="1" vertex="1" value="Scheduler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=10;">
+          <mxGeometry x="40" y="120" width="170" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" parent="1" edge="1" source="e4" target="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="e6" parent="1" vertex="1" value="Lineage + refs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="40" y="120" width="170" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" parent="1" edge="1" source="e5" target="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

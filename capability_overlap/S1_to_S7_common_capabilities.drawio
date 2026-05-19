@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="s1-to-s7" name="S1–S7 — Full shared platform">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="720" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" parent="1" vertex="1" value="&lt;b&gt;S1–S7 — Full shared platform&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=16;fontStyle=1">
+          <mxGeometry x="40" y="10" width="1220" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" parent="1" vertex="1" value="All swimlanes · gold center = GoF platform spine everyone reuses" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontColor=#666666">
+          <mxGeometry x="40" y="44" width="1220" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" parent="1" vertex="1" value="&lt;b&gt;How to read this slide&lt;/b&gt;&lt;br&gt;&lt;font color=#CC9900&gt;■ Gold frame&lt;/font&gt; = overlap (both swimlanes need these)&lt;br&gt;&lt;font color=#005AAB&gt;■ Blue box&lt;/font&gt; = shared GoF service we build &amp; operate&lt;br&gt;&lt;font color=#2E8B8B&gt;■ Teal box&lt;/font&gt; = GoF coordinates; another product stays in charge&lt;br&gt;&lt;font color=#666666&gt;■ Grey column&lt;/font&gt; = mainly one swimlane today" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10">
+          <mxGeometry x="40" y="72" width="680" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" parent="1" vertex="1" value="&lt;b&gt;S7&lt;/b&gt; global &amp; partners&lt;br&gt;&lt;font style='font-size:9px'&gt;Mainly here&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10">
+          <mxGeometry x="40" y="155" width="280" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" parent="1" vertex="1" value="• Who may run compute in which country&lt;br&gt;• Co-simulation without leaking IP&lt;br&gt;• Onboard extended-enterprise partners&lt;br&gt;• Place data close to remote teams" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=11;">
+          <mxGeometry x="40" y="192" width="280" height="420" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" parent="1" vertex="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF9E6;strokeColor=#CC9900;strokeWidth=2;">
+          <mxGeometry x="340" y="155" width="540" height="467" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" parent="1" vertex="1" value="&lt;b&gt;OVERLAP — build once on GoF&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;Same platform service · both swimlanes · do not build twice&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10">
+          <mxGeometry x="350" y="160" width="520" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" parent="1" vertex="1" value="&lt;b&gt;Stable IDs &amp; lineage&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Global data and artifact trace&lt;/font&gt;&lt;br&gt;&lt;font style='font-size:9px;color:#333'&gt;&lt;i&gt;GoF builds &amp; operates this&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="355" y="213" width="250" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" parent="1" vertex="1" value="&lt;b&gt;Access control (MDAC)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Geo, EE, export, and contract rules&lt;/font&gt;&lt;br&gt;&lt;font style='font-size:9px;color:#333'&gt;&lt;i&gt;GoF builds &amp; operates this&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="615" y="213" width="250" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" parent="1" vertex="1" value="&lt;b&gt;SPDM staging &amp; publish&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Lifecycle hand-offs worldwide&lt;/font&gt;&lt;br&gt;&lt;font style='font-size:9px;color:#333'&gt;&lt;i&gt;GoF coordinates (external tool is boss)&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8E8E8;strokeColor=#2E8B8B;fontStyle=1">
+          <mxGeometry x="355" y="303" width="250" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" parent="1" vertex="1" value="&lt;b&gt;Batch &amp; HPC run API&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Compute where policy allows&lt;/font&gt;&lt;br&gt;&lt;font style='font-size:9px;color:#333'&gt;&lt;i&gt;GoF builds &amp; operates this&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="615" y="303" width="250" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" parent="1" vertex="1" value="&lt;b&gt;Run ID &amp; monitoring&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Cross-site run correlation&lt;/font&gt;&lt;br&gt;&lt;font style='font-size:9px;color:#333'&gt;&lt;i&gt;GoF builds &amp; operates this&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="355" y="393" width="250" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" parent="1" vertex="1" value="&lt;b&gt;Software environment catalog&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Harmonized versions across sites&lt;/font&gt;&lt;br&gt;&lt;font style='font-size:9px;color:#333'&gt;&lt;i&gt;GoF builds &amp; operates this&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="615" y="393" width="250" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" parent="1" vertex="1" value="&lt;b&gt;Single sign-on&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Partners and internal engineers&lt;/font&gt;&lt;br&gt;&lt;font style='font-size:9px;color:#333'&gt;&lt;i&gt;GoF builds &amp; operates this&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="355" y="483" width="250" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" parent="1" vertex="1" value="&lt;b&gt;Global federation policy&lt;/b&gt;&lt;br&gt;&lt;font color=#FF6600&gt;&lt;b&gt;NEW with this swimlane&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Who may run where — without owning all grids&lt;/font&gt;&lt;br&gt;&lt;font style='font-size:9px;color:#333'&gt;&lt;i&gt;GoF builds &amp; operates this&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1">
+          <mxGeometry x="615" y="483" width="250" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" parent="1" vertex="1" value="Outside GoF&lt;br&gt;&lt;font style='font-size:9px'&gt;Never our scope&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10">
+          <mxGeometry x="900" y="155" width="280" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" parent="1" vertex="1" value="• Partner corporate IT&lt;br&gt;• Global workplace programs&lt;br&gt;• Legal &amp; contract systems" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontSize=11;">
+          <mxGeometry x="900" y="192" width="280" height="420" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" parent="1" vertex="1" value="&lt;b&gt;→&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=22;fontColor=#CC9900;">
+          <mxGeometry x="325" y="355" width="45" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" parent="1" vertex="1" value="&lt;b&gt;←&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=22;fontColor=#CC9900;">
+          <mxGeometry x="885" y="355" width="45" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" parent="1" vertex="1" value="&lt;b&gt;How to read:&lt;/b&gt; After S1–S7: one governed platform in the center; swimlanes are different customers of the same services." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#CC9900;fontSize=10;align=left">
+          <mxGeometry x="40" y="632" width="1220" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

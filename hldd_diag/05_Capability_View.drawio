@@ -1,0 +1,47 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="hldd-05-cap" name="05 Capability View">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="360" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;HLDD 3.1 — Swimlanes S1–S7 to Platform Capabilities&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;">
+          <mxGeometry x="40" y="12" width="1620" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg" parent="1" vertex="1" value="Light blue = swimlane focus &amp;nbsp;|&amp;nbsp; Gold = shared spine (C1–C7)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;align=left;spacingLeft=6;fontSize=9;">
+          <mxGeometry x="40" y="50" width="400" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="sl_S1" parent="1" vertex="1" value="&lt;b&gt;S1&lt;/b&gt;&lt;br&gt;Data &amp;amp; compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FC;strokeColor=#005AAB;align=center;fontSize=10;">
+          <mxGeometry x="40" y="100" width="210" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sl_S2" parent="1" vertex="1" value="&lt;b&gt;S2&lt;/b&gt;&lt;br&gt;Dev &amp;amp; deploy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FC;strokeColor=#005AAB;align=center;fontSize=10;">
+          <mxGeometry x="268" y="100" width="210" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sl_S3" parent="1" vertex="1" value="&lt;b&gt;S3&lt;/b&gt;&lt;br&gt;CAE execution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FC;strokeColor=#005AAB;align=center;fontSize=10;">
+          <mxGeometry x="496" y="100" width="210" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sl_S4" parent="1" vertex="1" value="&lt;b&gt;S4&lt;/b&gt;&lt;br&gt;Workflows" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FC;strokeColor=#005AAB;align=center;fontSize=10;">
+          <mxGeometry x="724" y="100" width="210" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sl_S5" parent="1" vertex="1" value="&lt;b&gt;S5&lt;/b&gt;&lt;br&gt;MDAO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FC;strokeColor=#005AAB;align=center;fontSize=10;">
+          <mxGeometry x="952" y="100" width="210" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sl_S6" parent="1" vertex="1" value="&lt;b&gt;S6&lt;/b&gt;&lt;br&gt;AI / ML" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FC;strokeColor=#005AAB;align=center;fontSize=10;">
+          <mxGeometry x="1180" y="100" width="210" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="sl_S7" parent="1" vertex="1" value="&lt;b&gt;S7&lt;/b&gt;&lt;br&gt;Global / EE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FC;strokeColor=#005AAB;align=center;fontSize=10;">
+          <mxGeometry x="1408" y="100" width="210" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="hub" parent="1" vertex="1" value="&lt;b&gt;Shared spine&lt;/b&gt;&lt;br&gt;Refs · MDAC · Execution · Run ID · Runtime · Session" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD54F;strokeColor=#F9A825;fontStyle=1;align=center;fontSize=10;">
+          <mxGeometry x="480" y="220" width="740" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="2" parent="1" edge="1" source="sl_S1" target="hub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="3" parent="1" edge="1" source="sl_S2" target="hub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="4" parent="1" edge="1" source="sl_S3" target="hub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="5" parent="1" edge="1" source="sl_S4" target="hub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="6" parent="1" edge="1" source="sl_S5" target="hub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="7" parent="1" edge="1" source="sl_S6" target="hub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="8" parent="1" edge="1" source="sl_S7" target="hub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

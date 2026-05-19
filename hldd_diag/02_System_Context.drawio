@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="hldd-02-context" name="02 System Context">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="820" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;HLDD 2.1 / 4.1 — System Context&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;">
+          <mxGeometry x="40" y="12" width="1200" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg" parent="1" vertex="1" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Blue = GoF platform &amp;nbsp;|&amp;nbsp; White = users &amp;nbsp;|&amp;nbsp; Grey dashed = integrate (external authority)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;align=left;spacingLeft=6;fontSize=9;">
+          <mxGeometry x="40" y="50" width="520" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof" parent="1" vertex="1" value="GoF Platform Boundary" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fillColor=#E8F4FC;strokeColor=#005AAB;strokeWidth=2;fontStyle=1;">
+          <mxGeometry x="280" y="110" width="520" height="420" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_data" parent="gof" vertex="1" value="Governed Data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="20" y="45" width="150" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_exp" parent="gof" vertex="1" value="Experience" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="200" y="45" width="150" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_exec" parent="gof" vertex="1" value="Execution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="360" y="45" width="150" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_auto" parent="gof" vertex="1" value="Automation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="20" y="130" width="150" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_del" parent="gof" vertex="1" value="Delivery" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="200" y="130" width="150" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_fed" parent="gof" vertex="1" value="Federation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="360" y="130" width="150" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_rt" parent="gof" vertex="1" value="Runtime (horizontal)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="20" y="215" width="150" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="u_eng" parent="1" vertex="1" value="Engineers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666;">
+          <mxGeometry x="40" y="130" width="180" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="u_dev" parent="1" vertex="1" value="Developers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666;">
+          <mxGeometry x="40" y="200" width="180" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="u_auto" parent="1" vertex="1" value="CI / workflows" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666;">
+          <mxGeometry x="40" y="270" width="180" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_life" parent="1" vertex="1" value="SPDM / PLM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=10;">
+          <mxGeometry x="860" y="130" width="180" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_id" parent="1" vertex="1" value="IAM / SSO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=10;">
+          <mxGeometry x="860" y="200" width="180" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_hpc" parent="1" vertex="1" value="HPC scheduler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=10;">
+          <mxGeometry x="860" y="270" width="180" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_stor" parent="1" vertex="1" value="Storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=10;">
+          <mxGeometry x="860" y="340" width="180" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_dom" parent="1" vertex="1" value="CAE / MDAO apps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=10;">
+          <mxGeometry x="860" y="410" width="180" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_ci" parent="1" vertex="1" value="CI / registry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=10;">
+          <mxGeometry x="860" y="480" width="180" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="2" parent="1" edge="1" source="u_eng" target="gof" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="3" parent="1" edge="1" source="d_data" target="e_life" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="4" parent="1" edge="1" source="d_exec" target="e_hpc" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="5" parent="1" edge="1" source="d_exec" target="e_dom" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

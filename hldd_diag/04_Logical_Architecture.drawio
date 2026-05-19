@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="hldd-04-logical" name="04 Logical Architecture">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="780" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;HLDD 4.5 — TO-BE Logical Architecture&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;">
+          <mxGeometry x="40" y="12" width="1320" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg" parent="1" vertex="1" value="Blue = platform domains &amp;nbsp;|&amp;nbsp; Gold = cross-cutting services &amp;nbsp;|&amp;nbsp; Arrows = primary dependencies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;align=left;spacingLeft=6;fontSize=9;">
+          <mxGeometry x="40" y="50" width="600" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="xc" parent="1" vertex="1" value="Cross-cutting services" style="swimlane;whiteSpace=wrap;html=1;startSize=24;fillColor=#FFF9E6;strokeColor=#CC9900;">
+          <mxGeometry x="40" y="108" width="1320" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="x1" parent="xc" vertex="1" value="Run ID" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#CC9900;fontSize=10;">
+          <mxGeometry x="20" y="38" width="120" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="x2" parent="xc" vertex="1" value="MDAC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#CC9900;fontSize=10;">
+          <mxGeometry x="150" y="38" width="120" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="x3" parent="xc" vertex="1" value="Lineage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#CC9900;fontSize=10;">
+          <mxGeometry x="280" y="38" width="120" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="x4" parent="xc" vertex="1" value="Observe" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#CC9900;fontSize=10;">
+          <mxGeometry x="410" y="38" width="120" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="x5" parent="xc" vertex="1" value="Notify" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#CC9900;fontSize=10;">
+          <mxGeometry x="540" y="38" width="120" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="z" parent="1" vertex="1" value="Platform domains (TO-BE)" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fillColor=#E8F4FC;strokeColor=#005AAB;fontStyle=1;">
+          <mxGeometry x="40" y="200" width="1320" height="320" as="geometry"/>
+        </mxCell>
+        <mxCell id="lc1" parent="z" vertex="1" value="&lt;b&gt;Governed Data &amp;amp; Continuity&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="20" y="45" width="400" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="lc2" parent="z" vertex="1" value="&lt;b&gt;Experience &amp;amp; Access&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="440" y="45" width="400" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="lc3" parent="z" vertex="1" value="&lt;b&gt;Execution Fabric&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="860" y="45" width="420" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="lc4" parent="z" vertex="1" value="&lt;b&gt;Engineering Automation&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="20" y="140" width="310" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="lc5" parent="z" vertex="1" value="&lt;b&gt;Software Delivery&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="350" y="140" width="310" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="lc6" parent="z" vertex="1" value="&lt;b&gt;Global Federation&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="680" y="140" width="300" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="lc7" parent="z" vertex="1" value="&lt;b&gt;Runtime Platforms&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=10;">
+          <mxGeometry x="1000" y="140" width="280" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="2" parent="1" edge="1" source="lc4" target="lc3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="3" parent="1" edge="1" source="lc3" target="lc1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="4" parent="1" edge="1" source="lc5" target="lc7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="note" parent="1" vertex="1" value="AI/ML zone spans Execution + Automation + Data (same MDAC)" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;">
+          <mxGeometry x="40" y="540" width="1320" height="24" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

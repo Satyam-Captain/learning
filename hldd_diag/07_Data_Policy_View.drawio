@@ -1,0 +1,47 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="hldd-07-data" name="07 Data Policy">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="480" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;HLDD 4.2 — Data &amp;amp; Policy Flow&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;">
+          <mxGeometry x="40" y="12" width="1220" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg" parent="1" vertex="1" value="Blue = GoF behavior &amp;nbsp;|&amp;nbsp; Grey = external authority" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;align=left;spacingLeft=6;fontSize=9;">
+          <mxGeometry x="40" y="50" width="520" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="actor" parent="1" vertex="1" value="User / Automation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#666;">
+          <mxGeometry x="40" y="130" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="r" parent="1" vertex="1" value="&lt;b&gt;References&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=11;">
+          <mxGeometry x="220" y="125" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="2" parent="1" edge="1" source="actor" target="r" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="m" parent="1" vertex="1" value="&lt;b&gt;MDAC&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=11;">
+          <mxGeometry x="220" y="125" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" parent="1" edge="1" source="r" target="m" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="s" parent="1" vertex="1" value="&lt;b&gt;SPDM stage&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=11;">
+          <mxGeometry x="220" y="125" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" parent="1" edge="1" source="m" target="s" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="l" parent="1" vertex="1" value="&lt;b&gt;Lineage&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=11;">
+          <mxGeometry x="220" y="125" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" parent="1" edge="1" source="s" target="l" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="c" parent="1" vertex="1" value="&lt;b&gt;Cache policy&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontSize=11;">
+          <mxGeometry x="220" y="125" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" parent="1" edge="1" source="l" target="c" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#333333;"/>
+        <mxCell id="spdm" parent="1" vertex="1" value="SPDM authority" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;">
+          <mxGeometry x="520" y="280" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="stor" parent="1" vertex="1" value="Storage tiers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;">
+          <mxGeometry x="760" y="280" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" parent="1" edge="1" source="s" target="spdm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="8" parent="1" edge="1" source="c" target="stor" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

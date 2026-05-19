@@ -1,0 +1,47 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="hldd-06-integ" name="06 Integration View">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="620" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;HLDD 4.1 — Integration View&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;">
+          <mxGeometry x="40" y="12" width="1120" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg" parent="1" vertex="1" value="Blue = GoF &amp;nbsp;|&amp;nbsp; Grey dashed = enterprise (authority external) &amp;nbsp;|&amp;nbsp; Dashed arrow = integrate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;align=left;spacingLeft=6;fontSize=9;">
+          <mxGeometry x="40" y="50" width="520" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="gof" parent="1" vertex="1" value="GoF Control Plane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;fontStyle=1;align=center;">
+          <mxGeometry x="420" y="180" width="360" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="i1" parent="1" vertex="1" value="SPDM / PLM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=11;">
+          <mxGeometry x="80" y="140" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="2" parent="1" edge="1" source="gof" target="i1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="i2" parent="1" vertex="1" value="IAM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=11;">
+          <mxGeometry x="80" y="240" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" parent="1" edge="1" source="gof" target="i2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="i3" parent="1" vertex="1" value="HPC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=11;">
+          <mxGeometry x="80" y="340" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" parent="1" edge="1" source="gof" target="i3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="i4" parent="1" vertex="1" value="Storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=11;">
+          <mxGeometry x="80" y="440" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" parent="1" edge="1" source="gof" target="i4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="i5" parent="1" vertex="1" value="CI / CD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=11;">
+          <mxGeometry x="900" y="140" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" parent="1" edge="1" source="gof" target="i5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="i6" parent="1" vertex="1" value="Registry" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=11;">
+          <mxGeometry x="900" y="240" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" parent="1" edge="1" source="gof" target="i6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+        <mxCell id="i7" parent="1" vertex="1" value="Licenses" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;dashed=1;fontSize=11;">
+          <mxGeometry x="900" y="340" width="160" height="56" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" parent="1" edge="1" source="gof" target="i7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=1;strokeColor=#666666;dashed=1;;"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

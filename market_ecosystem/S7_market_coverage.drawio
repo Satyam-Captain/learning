@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="s7-mkt" name="S7 Market Coverage">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" parent="1" vertex="1" value="&lt;b&gt;S7 — Market &amp; Ecosystem Coverage&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=16;fontStyle=1">
+          <mxGeometry x="60" y="12" width="1280" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" parent="1" vertex="1" value="Source: market_tools_research_mapping.xlsx · Clusters, not exhaustive vendor lists" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontColor=#666666">
+          <mxGeometry x="60" y="48" width="1280" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" parent="1" vertex="1" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;&lt;font color=#005AAB&gt;■ OWN&lt;/font&gt; &amp;nbsp; &lt;font color=#2E8B8B&gt;■ ORCHESTRATE&lt;/font&gt; &amp;nbsp; &lt;font color=#666666&gt;■ INTEGRATE&lt;/font&gt; &amp;nbsp; &lt;font color=#999999&gt;▢ EXTERNAL&lt;/font&gt; &amp;nbsp; &lt;font color=#FF9900&gt;■ GAP&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10">
+          <mxGeometry x="60" y="72" width="520" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" parent="1" vertex="1" value="&lt;b&gt;Capability&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10">
+          <mxGeometry x="60" y="130" width="220" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" parent="1" vertex="1" value="&lt;b&gt;OSS / research&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10">
+          <mxGeometry x="280" y="130" width="320" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" parent="1" vertex="1" value="&lt;b&gt;Commercial class&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10">
+          <mxGeometry x="620" y="130" width="320" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" parent="1" vertex="1" value="&lt;b&gt;Strategic gap&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10">
+          <mxGeometry x="960" y="130" width="200" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" parent="1" vertex="1" value="&lt;b&gt;Federation&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;">
+          <mxGeometry x="60" y="165" width="210" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" parent="1" vertex="1" value="iRODS zones, Globus" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="280" y="165" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" parent="1" vertex="1" value="—" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="620" y="165" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" parent="1" vertex="1" value="Policy not grid ownership" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#FF9900;fontStyle=1">
+          <mxGeometry x="960" y="165" width="380" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" parent="1" vertex="1" value="&lt;b&gt;VDI / access&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;">
+          <mxGeometry x="60" y="245" width="210" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" parent="1" vertex="1" value="Open OnDemand" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="280" y="245" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" parent="1" vertex="1" value="Citrix, Horizon" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="620" y="245" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" parent="1" vertex="1" value="Session broker (GoF)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#FF9900;fontStyle=1">
+          <mxGeometry x="960" y="245" width="380" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" parent="1" vertex="1" value="&lt;b&gt;Data placement&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;">
+          <mxGeometry x="60" y="325" width="210" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" parent="1" vertex="1" value="iRODS, CDN patterns" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="280" y="325" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" parent="1" vertex="1" value="—" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="620" y="325" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" parent="1" vertex="1" value="S1 cache + policy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#FF9900;fontStyle=1">
+          <mxGeometry x="960" y="325" width="380" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" parent="1" vertex="1" value="&lt;b&gt;Co-simulation&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;">
+          <mxGeometry x="60" y="405" width="210" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" parent="1" vertex="1" value="FMI gateways (custom)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="280" y="405" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" parent="1" vertex="1" value="—" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="620" y="405" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" parent="1" vertex="1" value="Gateway not geometry swap" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#FF9900;fontStyle=1">
+          <mxGeometry x="960" y="405" width="380" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" parent="1" vertex="1" value="&lt;b&gt;EE trust&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;">
+          <mxGeometry x="60" y="485" width="210" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="26" parent="1" vertex="1" value="Keycloak federation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="280" y="485" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="27" parent="1" vertex="1" value="UEA / Axess" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;">
+          <mxGeometry x="620" y="485" width="330" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="28" parent="1" vertex="1" value="Contract-aware access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#FF9900;fontStyle=1">
+          <mxGeometry x="960" y="485" width="380" height="72" as="geometry"/>
+        </mxCell>
+        <mxCell id="29" parent="1" vertex="1" value="&lt;b&gt;GoF positioning:&lt;/b&gt; BUILD thin control plane (references, MDAC, run layer) · INTEGRATE schedulers, SPDM, CI, ModelOps · ORCHESTRATE stage/publish &amp; campaigns" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#CC9900;fontSize=10;align=left">
+          <mxGeometry x="60" y="580" width="1280" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

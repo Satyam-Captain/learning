@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net" modified="2026-05-20T12:00:00.000Z" agent="GoF Architecture Workspace" version="22.1.0" type="device">
+  <diagram id="hldd-09-oos" name="09 Out of Scope">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="520" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" parent="1" vertex="1" value="&lt;b&gt;HLDD 5.3 — Boundary View&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;">
+          <mxGeometry x="40" y="12" width="1020" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg" parent="1" vertex="1" value="Blue OWN &amp;nbsp;|&amp;nbsp; Grey INTEG &amp;nbsp;|&amp;nbsp; Dashed OUT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333;align=left;spacingLeft=6;fontSize=9;">
+          <mxGeometry x="40" y="50" width="420" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="own" parent="1" vertex="1" value="&lt;b&gt;OWN&lt;/b&gt;&lt;br&gt;Policy, refs, runs, workflows, env catalog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B8D4EF;strokeColor=#005AAB;align=center;fontSize=11;">
+          <mxGeometry x="80" y="120" width="260" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="integ" parent="1" vertex="1" value="&lt;b&gt;INTEGRATE&lt;/b&gt;&lt;br&gt;SPDM, IAM, HPC, storage, CI, CAE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666;align=center;fontSize=11;">
+          <mxGeometry x="420" y="120" width="260" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="out" parent="1" vertex="1" value="&lt;b&gt;OUT&lt;/b&gt;&lt;br&gt;PLM ownership, solver IP, legal, partner IT" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;dashed=1;align=center;fontSize=11;">
+          <mxGeometry x="760" y="120" width="260" height="100" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
